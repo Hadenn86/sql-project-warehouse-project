@@ -17,7 +17,7 @@ This repository provides a structured approach to building, managing, and analyz
 
 ## Workflow
 1. Data Ingestion  
-   Source data is extracted from .CSV files.
+   Source data is imported from two systems (ERP and CRM) provided as .CSV files.
 2. Batch Processing
    Raw data exctrated from .CSV files, Full load, Truncate & Insert.
 4. Transformation  
