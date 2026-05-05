@@ -1,35 +1,67 @@
 # sql-project-warehouse-project
-This repository provides a structured approach to building, managing, and analyzing data within a SQL-based data warehouse environment. It is designed to support scalable analytics workflows, ensuring data consistency, performance optimization, and actionable insights for reporting and decision-making.
+
+A structured SQL-based data warehouse solution for building scalable analytics workflows. This project provides ETL pipelines, schema design, and analytical queries for integrating and analyzing data from multiple sources.
+
+## Table of Contents
+- [Objectives](#objectives)
+- [Key Features](#key-features)
+- [Workflow](#workflow)
+- [Getting Started](#getting-started)
+- [Best Practices](#best-practices)
 
 ## Objectives
-- Establish a robust "data warehouse architecture" leveraging SQL Server (or equivalent platforms).
-- Implement "ETL (Extract, Transform, Load) pipelines" to integrate heterogeneous data sources.
-- Ensure "data quality and consistency" through validation rules, audit trails, and error-handling mechanisms.
-- Enable "efficient querying and reporting" using advanced SQL techniques such as window functions, stored procedures, and indexing strategies.
-- Provide "analytical models" for trend analysis, forecasting, and business intelligence.
+
+- Build robust data warehouse architecture using SQL Server
+- Implement ETL pipelines for heterogeneous data sources (ERP, CRM)
+- Ensure data quality through validation and error handling
+- Enable efficient reporting with advanced SQL techniques
+- Provide analytical models for insights and forecasting
 
 ## Key Features
-- Schema Design: Normalized and denormalized structures tailored for analytical workloads.
-- ETL Workflows: Automated ingestion and transformation of raw data into structured warehouse tables.
-- Data Consistency Checks: Logic for handling duplicates, missing values, and referential integrity.
-- Performance Optimization: Indexing, partitioning, and query refactoring for large-scale datasets.
-- Analytical Queries: Predefined SQL scripts for regression analysis, aggregations, and KPI reporting.
+
+- **Schema Design:** Optimized structures for analytical workloads
+- **ETL Workflows:** Automated data ingestion and transformation
+- **Data Quality:** Duplicate handling, validation rules, referential integrity
+- **Performance:** Indexing, partitioning, query optimization
+- **Analytics:** Predefined SQL scripts for KPI reporting and analysis
 
 ## Workflow
-1. Data Ingestion  
-   Source data is imported from two systems (ERP and CRM) provided as .CSV files.
-2. Batch Processing
-   Raw data exctrated from .CSV files, Full load, Truncate & Insert.
-4. Transformation  
-   Business rules are applied to clean, standardize, and enrich the data.  
-5. Loading  
-   Processed data is loaded into warehouse tables optimized for analytics.  
-6. Analysis  
-   SQL queries scripts are used to generate insights, dashboards, and reports.  
 
-## Best Practice
-- Maintain clear documentation of schema, ETL logic, and analytical queries.
-- Apply modular design for stored procedures and scripts to enhance maintainability.
-- Use sample datasets for validation before deploying to production.
-- Implement audit trails to track data lineage and transformations.
-- Continuously refactor queries for readability and performance.
+1. **Data Ingestion** - Import CSV files from ERP and CRM systems
+2. **Batch Processing** - Extract and load raw data (Full load or Truncate & Insert)
+3. **Transformation** - Apply business rules, clean, standardize data
+4. **Loading** - Store processed data in warehouse tables
+5. **Analysis** - Generate insights, reports, and dashboards
+
+## Getting Started
+
+```sql
+-- 1. Set up database
+CREATE DATABASE DataWarehouse;
+
+-- 2. Create warehouse tables
+-- See /sql/schema/ directory for table definitions
+
+-- 3. Execute ETL pipelines
+-- See /sql/etl/ directory for pipeline scripts
+
+-- 4. Run analytical queries
+-- See /sql/queries/ directory for reporting scripts
+```
+
+## Best Practices
+
+- ✅ Maintain clear documentation of schema and ETL logic
+- ✅ Use modular design for stored procedures
+- ✅ Test with sample datasets before production deployment
+- ✅ Implement audit trails for data lineage tracking
+- ✅ Continuously optimize query performance
+- ✅ Version control all SQL scripts
+
+## License
+
+[Add your license here]
+
+## Contact
+
+For questions or support, contact the project maintainers.
