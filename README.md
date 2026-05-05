@@ -60,4 +60,4 @@ CREATE DATABASE DataWarehouse;
 
 ## License
 
-This project using MIT License
+This project using MIT license
