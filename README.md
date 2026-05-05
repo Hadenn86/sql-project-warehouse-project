@@ -1,6 +1,6 @@
 # sql-project-warehouse-project
 
-A structured SQL-based data warehouse solution for building scalable analytics workflows. This project provides ETL pipelines, schema design, and analytical queries for integrating and analyzing data from multiple sources.
+A structured SQL-based data warehouse solution for building scalable analytics workflows. This project provides ETL pipelines, schema design, and analytical queries for integrating and analyzing data from two sources.
 
 ## Table of Contents
 - [Objectives](#objectives)
@@ -60,8 +60,4 @@ CREATE DATABASE DataWarehouse;
 
 ## License
 
-[Add your license here]
-
-## Contact
-
-For questions or support, contact the project maintainers.
+This project using MIT License
